@@ -67,7 +67,7 @@ public class SistemRental implements Serializable {
     }
 
     private void prosesBarisTransaksi(String baris) throws TransaksiException {
-        // Format digit 4: ID=ACT-01, KD=OBJ-A, JML=3,
+       
         String[] bagian = baris.split(",");
         String idPenyewa = null;
         String kodeKendaraan = null;
@@ -123,7 +123,7 @@ public class SistemRental implements Serializable {
     }
 
     public void simpanLaporanAkhir() {
-        // 1. Object Serialization ke state.bak (Digit Ketiga: 9)
+        
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("state.bak"))) {
             oos.writeObject(this);
             System.out.println("\n[INFO] Serialisasi state sistem berhasil disimpan ke state.bak");
@@ -131,7 +131,7 @@ public class SistemRental implements Serializable {
             System.out.println("[ERROR SERIALIZATION] Gagal menyimpan state.bak: " + e.getMessage());
         }
 
-        // 2. Penulisan File I/O Teks Format Kolom ke laporan.txt (Digit Ketiga: 9)
+        
         try (PrintWriter pw = new PrintWriter(new FileWriter("laporan.txt"))) {
             pw.println("====================================================================================");
             pw.println("LAPORAN AKHIR TRANSAKSI - " + namaRental.toUpperCase());
