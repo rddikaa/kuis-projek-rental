@@ -1,0 +1,17 @@
+====================================================================================
+LAPORAN AKHIR TRANSAKSI - RENTAL MAJU JAYA
+====================================================================================
+NO   | ID AKTOR | NAMA PENYEWA | KODE     | NAMA KENDARAAN         | KATEGORI         | QTY  
+------------------------------------------------------------------------------------
+1    | ACT-01   | Eko          | OBJ-A    | Mobil SUV Premium      | Premium          | 3    
+2    | ACT-02   | Fina         | OBJ-C    | Minibus Ekonomis       | Reguler/Ekonomis | 2    
+3    | ACT-02   | Fina         | OBJ-A    | Mobil SUV Premium      | Premium          | 1    
+====================================================================================
+
+SISA KUOTA KENDARAAN:
+KODE     | NAMA KENDARAAN         | KATEGORI         | SISA STOK 
+------------------------------------------------------------------
+OBJ-A    | Mobil SUV Premium      | Premium          | 6         
+OBJ-B    | Motor Matic Reguler    | Reguler/Ekonomis | 2         
+OBJ-C    | Minibus Ekonomis       | Reguler/Ekonomis | 48        
+==================================================================
